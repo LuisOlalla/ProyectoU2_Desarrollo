@@ -1,0 +1,176 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant website template with html and css</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="~/Content/index.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header section start -->
+    <!-- header section end -->
+    <!-- slider section start -->
+    <div class="home" id="home">
+        <div class="swiper home-slider">>
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                  
+                        <img src="~/Content/imagenes/crown-symbol.png" />
+                        <h3>Antojitos de media noche </h3>
+                        <h1>Hamburgesas</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+
+                        <img src="~/Content/imagenes/crown-symbol.png" />
+                        <h3>Antojitos de media noche </h3>
+                        <h1>Alitas BBQ </h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+
+                        <img src="~/Content/imagenes/crown-symbol.png" />
+                        <h3>Antojitos de media noche </h3>
+                        <h1>Los mejores cortes</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- slider section ends -->
+    <!-- welcome section start -->
+    <section class="welcome" id="about">
+        <h1 class="heading">Antojitos de media noche</h1>
+        <center><h3 class="sub-heading"> ~ Ofrecemos: ~ </h3></center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="~/Content/imagenes/post-thumb-1.jpg" />
+                </div>
+
+                <div class="content">
+                    <h3>PAPAS FRITAS</h3>
+                    <p>Disfruta de las exquisitas papas fritas, para todos los gustos y sabores, tenemos una gran variedad de salsas para darte un toque único.</p>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="~/Content/imagenes/post-thumb-2.jpg" />
+                </div>
+
+                <div class="content">
+                    <h3>HAMBURGESAS</h3>
+                    <p>Las mejores hamburguesas las encontraras en “Antojitos de media noche” garantizamos su sabor único de la casa.</p>
+
+   
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="~/Content/imagenes/post-thumb-3.jpg" />
+                </div>
+
+                <div class="content">
+                    <h3>Cortes de carnes</h3>
+                    <p>El mejor asado, con carnes selectas y frescas para disfrutar en familia, tenemos variedades de carnes con increíbles salsas.</p>
+
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <!-- news section ends -->
+    <!-- footer section start -->
+    <section class="footer">
+
+
+
+        <div>
+            <h3>Realizado por:</h3>
+            <p>Empresa "Antojitos de media noche" Desarrollo Web</p>
+        </div>
+
+        <div>
+            <h3>Integrantes</h3>
+            <span>Selena Elizabeth Rivas Mera</span><br />
+            <span>Luis Miguel Olalla Chuque</span><br />
+            <span>Jhon Klever Zambrano Macias</span><br />
+            <span>Joan Fernando Cevallos Sarango</span> <br />
+        </div>
+        <br />
+        <p>&copy;2023 Antojitos de media noche</p>
+    </section>
+    <!-- footer section end -->
+    <!-- jump to top -->
+
+    <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true,
+      });
+    </script>
+    <script type="text/javascript">
+		let menu = document.querySelector('#menu');
+		let navbar = document.querySelector('.navbar');
+
+		menu.onclick = () =>{
+			menu.classList.toggle('fa-times');
+			navbar.classList.toggle('active');
+		}
+    </script>
+</body>
+</html>
